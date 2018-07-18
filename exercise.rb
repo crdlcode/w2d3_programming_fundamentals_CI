@@ -17,7 +17,7 @@ movies_year = {
   American_Psycho: "2000"
 }
 
-cities_population = {
+cities_pop = {
   Hong_Kong: "7.3 million",
   Seoul: "9.9 million",
   Toronto: "2.8 million"
@@ -32,12 +32,36 @@ names_ages = {
 
 #Exercise1
 #printing out arrays for coin flips
-print: coin_toss
+print coin_toss
 #prints of first element of array
-puts: fav_colours.first
+puts fav_colours.first
 #output sorted versio of social group ages
-puts: the_ages.sort
+puts the_ages.sort
 #adds new baby (0) to the_ages
 the_ages << '0'
 #print year of one movie
-print: movies_year[year]
+print movies_year[:"Beautiful_Mind"]
+
+
+#Exercise2
+# prints last element of fav_colours
+print fav_colours.last
+# add city to cities_population
+cities_pop ["Shanghai"] = "24,18 million"
+# reverse array of coin flisp
+print coin_toss.reverse
+# prints out population of one city
+cities_pop.each do |city, pop|
+  puts "#{city} has #{pop}"
+end
+#5 prints out a sentence about each artist
+
+fav_artists.each do |name|
+  puts "i think #{name} is great!"
+end
+
+# Exercise3
+# 1 print out first two artists
+print fav_artists[1..2]
+# 2
+movies_year.each do |movie,year|
