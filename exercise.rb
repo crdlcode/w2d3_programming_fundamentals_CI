@@ -52,16 +52,24 @@ cities_pop ["Shanghai"] = "24,18 million"
 print coin_toss.reverse
 # prints out population of one city
 cities_pop.each do |city, pop|
-  puts "#{city} has #{pop}"
+  puts "\n #{city} has #{pop}"
 end
 #5 prints out a sentence about each artist
-
 fav_artists.each do |name|
-  puts "i think #{name} is great!"
+  puts "\n i think #{name} is great!"
 end
-
 # Exercise3
 # 1 print out first two artists
 print fav_artists[1..2]
 # 2
 movies_year.each do |movie,year|
+  puts "\n #{movie} was released #{year}"
+end
+#3
+puts the_ages.reverse
+#4
+movies_year["Beauty and the Beast"] = [1991,2017]
+print movies_year
+
+# Exercise4
+#1`
