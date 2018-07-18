@@ -61,15 +61,31 @@ end
 # Exercise3
 # 1 print out first two artists
 print fav_artists[1..2]
-# 2
+# 2 print out date
 movies_year.each do |movie,year|
   puts "\n #{movie} was released #{year}"
 end
-#3
+#3 reverse ages
 puts the_ages.reverse
 #4
 movies_year["Beauty and the Beast"] = [1991,2017]
 print movies_year
 
-# Exercise4
+# Exercise4 less than 30 age
 #1`
+print "#{the_ages.select {|age| age < 30}}\n"
+
+
+
+print "the eldest is #{age.max}!"
+
+#3 count how many times you flipped heads
+print "#{(coin_toss.select {|coin| coin == "heads"}).count}/n"
+#4 remove one of the artist from favourites
+fav_artists.pop
+#5 change the population of one city
+cities_pop["Seoul"] = "18 million"
+
+# Exercise 5
+puts cities_pop.values.reduce(:+)
+# combines all elements into a single string
