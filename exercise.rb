@@ -76,7 +76,6 @@ print movies_year
 print "#{the_ages.select {|age| age < 30}}\n"
 
 
-
 print "the eldest is #{age.max}!"
 
 #3 count how many times you flipped heads
@@ -87,5 +86,6 @@ fav_artists.pop
 cities_pop["Seoul"] = "18 million"
 
 # Exercise 5
+#1 sum
 puts cities_pop.values.reduce(:+)
 # combines all elements into a single string
