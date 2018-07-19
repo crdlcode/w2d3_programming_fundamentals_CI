@@ -143,26 +143,33 @@ countries = [
 ]
 
 #Exercise7
+#1 output: I will not skateboard in the halls
 20.times {puts "I will not skateboard in the halls"}
-#2
+#2 create and array for the above
 detention = Array.new(20, "I will not skateboard in the halls")
-#3
+#3 create an array of 1-50 numbers
 onetofifty = (1.50).to_a
-#4
+#4 sum of numbers in above array
 puts onetofifty.reduce(:+)
-#5
+#5 create an array for each of above numbers
 print "#{((1..50).to_a.map {|num| (Array.new(3, num ))}).flatten}\n"
-#6
+#6 make a new array for countries and determine if islands
 print "#{countries}\n"
 only_islands = countries.select {|country| country[:is_island] == true}
 print "#{only_islands}\n"
 
 
 # Exercise 8
-expenses = [5.00,4.00,10.50,20.00]
+expenses = [250,7.95,30.95,16.50]
 expensestwo = [5.20,1.20,13.00,25.13]
 def sum(array)
   array.reduce (:+)
 end
 puts "The sum is: $#{sum(expenses)}"
 puts "The sum is: $#{sum(expensestwo)}"
+
+#Exercise9
+
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+
+grocery_list.each {|item| puts "* #{item}}
