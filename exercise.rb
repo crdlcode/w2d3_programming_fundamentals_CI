@@ -86,6 +86,61 @@ fav_artists.pop
 cities_pop["Seoul"] = "18 million"
 
 # Exercise 5
-#1 sum
+#1 sum of population
 puts cities_pop.values.reduce(:+)
-# combines all elements into a single string
+# .reduce method creates a new variable which you set the value equal to in the fist paranthesis (0). You then create two new values (sum and indv) of which one is the sum that you add the individual salaries to.
+
+#2 two messages according to age
+# *** is old
+# *** is young
+names_age.each do |name,age|
+  if age >= 30
+    puts "#{name} is old"
+  else
+    puts "#{name} is young"
+  end
+end
+#3 last two colors from fav_colours
+print "#{fav_colours[-2..-1]}\n"
+#4 increase ages by 1
+print "#{the_ages {|age| age + 1}}"
+#5 add two new fav_colours
+fav_colours.insert(-1,"purple","yellow")
+#allows for inserting more than one
+
+# Exercise 6
+# make a new hash that contains list of movies. each list should be an array
+# * 1999: The Matrix, Star Wars: Episode 1, The Mummy
+# * 2009: Avatar, Star Trek, District 9
+# * 2019: How to Train Your Dragon 3, Toy Story 4, Star Wars: Episode 9
+
+movies = {
+  1999 => ["The Matrix","Star Wars: Episode", "The Mummy"],
+  2009 => ["Avatar","Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+#2 make an array that contains each row of buttons on a phone
+phone = [[1,2,3],[4,5,6],[7,8,9],['*',0,'#']]
+#3 make array that contains information about three countries
+
+countries = [
+  {
+    name: "china",
+    continent: "asia"
+    is_island: false
+  },
+  {
+    name: "japan",
+    continent: "asia"
+    is_island: false
+  }
+  {
+    name: "australia",
+    continent: "oceania"
+    is_island: false
+  }
+]
+
+#Exercise7
+#
