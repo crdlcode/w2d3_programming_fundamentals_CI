@@ -143,4 +143,26 @@ countries = [
 ]
 
 #Exercise7
-#
+20.times {puts "I will not skateboard in the halls"}
+#2
+detention = Array.new(20, "I will not skateboard in the halls")
+#3
+onetofifty = (1.50).to_a
+#4
+puts onetofifty.reduce(:+)
+#5
+print "#{((1..50).to_a.map {|num| (Array.new(3, num ))}).flatten}\n"
+#6
+print "#{countries}\n"
+only_islands = countries.select {|country| country[:is_island] == true}
+print "#{only_islands}\n"
+
+
+# Exercise 8
+expenses = [5.00,4.00,10.50,20.00]
+expensestwo = [5.20,1.20,13.00,25.13]
+def sum(array)
+  array.reduce (:+)
+end
+puts "The sum is: $#{sum(expenses)}"
+puts "The sum is: $#{sum(expensestwo)}"
